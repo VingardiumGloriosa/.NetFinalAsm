@@ -2,12 +2,6 @@
 
 @{
 
-
-
-
-
-
-
     ViewData["Title"] = "Index";
 }
 
@@ -36,30 +30,80 @@
     </div>
     @foreach (var post in Model.Posts)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     {
         <div class="row grid-row">
             <div class="col-6 col-md-2">@Html.DisplayFor(x => post.Title)</div>
             <div class="d-none d-md-block col-md-6">@Html.DisplayFor(x => post.Text)</div>
             <div class="col-2 col-md-1">@Html.DisplayFor(x => post.Created)</div>
-            <div class="col-1"><span class="badge bg-dark text-dark">@Html.DisplayFor(x => post.Status)</span></div>
+            <div class="col-1"><span class="badge bg-info    text-dark">@Html.DisplayFor(x => post.Status)</span></div>
             <div class="col-1"><a class="btn btn-secondary" asp-action="Edit" asp-route-id="@post.Id">Edit</a></div>
             <div class="col-1"><a class="btn btn-secondary" asp-action="AddComment" asp-route-id="@post.Id">Add comment</a>
             </div>
         </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
